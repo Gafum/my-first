@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html, body{
+  width: 100%;
+}
+
+header {
+  z-index: 4;
+  background-color: rgb(238, 238, 238);
+  height: 50px;
+  width: 100%;
+  padding: 4px 25px;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 5px #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+#header{
+  height: 50px;
+}
+
+section{
+  width: 100%;
+}
+
+img {
+  max-height: 100%;
+}
+
+.menu-inner {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  width: 25px;
+  height: 3px;
+}
+
+#menu {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  height: 20px;
+  width: 35px;
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.contacts {
+  height: 30px;
+}
+
+.contacts-inner{
+  max-width: 14vw;
+}
+
+.contacts-inner:hover{
+ opacity: 0.5;
+}
+
+.youtube{
+  width: 30px;
+}
+
+.first{
+  padding: 65px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 100px;
+  text-align: start;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.c-f{
+  background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/ded35178be62548bbaf27fff/7d4f0734-43ed-4304-80cb-7ba55a2d7c64.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c-f::before{
+  z-index: 1;
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-info, .more-info{
+  font-family: 'Open Sans',sans-serif !important;
+  flex-direction: column;
+  display: flex;
+  gap:20px;
+  letter-spacing: 4px;
+  width: 45%;
+  font-size: 10px;
+}
+
+.main-info>h6{
+  font-weight: 300;
+  letter-spacing: 4px;
+  font-style: none;
+  font-size: 1.8em;
+}
+
+.main-info>h1{
+  font-family: "Bai Jamjuree";
+  text-align: start;
+  font-size: 7em;
+  font-weight: 400;
+  letter-spacing: 0px;
+  margin-bottom: 23px;
+  line-height: 1.1em;
+}
+
+.main-info>p>a{
+  color: white;
+}
+
+.main-info>p{
+  letter-spacing: 0;
+  font-size: 2.2em;
+  font-weight: 300;
+  margin-bottom: 140px;
+}
+
+.main-info>.contacts{
+  display: flex;
+  gap:20px;
+}
+
+.more-info>p{
+  font-size: 2em;
+  font-weight: 100;
+}
+
+.more-info>h4{
+  font-size: 2em;
+  letter-spacing: 0;
+}
+
+.more-info{
+  display: flex;
+  gap: 40px;
+}
+
+button{
+  font-weight: 300;
+  align-self: flex-start;
+  font-size: 24px;
+  color: white;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+}
+
+.btn-ping{
+  background-color: rgb(255, 96, 122);
+  min-width: 250px;
+}
+
+.btn-ping:hover{
+  background-color: rgb(255, 73, 103);
+}
+
+.contain{
+  padding: 0 100px;
+}
+
+
+.second{
+  text-align: center;
+  margin: 40px 50px;
+  max-width: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.second>h3, .third>h3{
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.second>p, .third>p{
+  font-family: 'Open Sans',sans-serif !important;
+  font-weight: 300;
+  font-size: 20px;
+  width: 60%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.imeges{
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 500px;
+}
+
+.imeges>.im{
+  width: 48%;
+  background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e088ab31e95c5a4ea6ca9500/ffff.jpg?version=);
+  background-size: cover;
+  background-position: center;
+}
+
+.block-descript{
+  width: 48%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.b-d-inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  color: white;
+}
+
+.b-d-inner>img{
+  width: 30%;
+}
+
+.b-d-inner>h4{
+  text-align: center;
+  max-width: 200px;
+}
+
+.b-d-first{
+  background-color: #e84a90;
+}
+
+.b-d-fours{
+  background-color: #545af8;
+}
+
+.b-d-second, .b-d-third{
+  background-color: #e5e5e5;
+  color: black;
+}
+
+.third{
+  padding: 50px;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.third>p{
+  margin-bottom: 60px;
+}
+
+.third>img{
+  max-width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fourth{
+  margin-top: 50px;
+  position: relative;
+  margin-bottom: 50px;
+  background-color: white;
+  display: flex;
+  gap: 5%;
+}
+
+.fourth>img{
+	width: 60%;
+	height: 540px;
+}
+
+.f-tx{
+  position: relative;
+  top: 50px;
+}
+
+.txt{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #ececec;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif !important;
+}
+
+.txt>h3{
+  font-family: "Bai Jamjuree";
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.txt>p{
+  font-size: 22px;
+  font-weight: 200;
+  margin-bottom: 25px;
+}
+
+.btn-blue{
+  background-color: rgb(69, 56, 255);
+  min-width: 250px;
+}
+
+.btn-blue:hover{
+  background-color: rgb(76, 73, 255);
+}
+
+.circle{
+	left: 60%;
+	transform: translate(-50%);
+  top: -35px;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-image: linear-gradient(#e84a90, #545af8);
+}
+
+.fifth{
+	background-image: linear-gradient( #545af8, #e84a90);
+	padding: 70px 20px;
+	display: flex;
+	gap: 20px;
+	height: 800px;
+	box-sizing: border-box;
+
+}
+
+.fif-tx{
+	padding: 30px 20px;
+	padding-bottom: 60px;
+	height: max-content;
+	width: 20%;
+	text-align: center;
+	box-shadow: 6px 6px 5px rgb(39, 39, 39);
+	font-size: 10px;
+}
+
+.fftt{
+	align-self: end;
+}
+
+.fstt{
+	align-self: start;
+}
+
+.fttt{
+	align-self: end;
+}
+
+.ffott{
+	align-self: start;
+}
+
+.ffitt{
+	align-self: end;
+}
+
+.fif-inner-img{
+	width: 50px;
+	height: 50px;
+	background-color: #e5e5e5;
+	padding: 20px;
+	border-radius: 50%;
+	align-self: center;
+}
+
+.fif-tx>h3{
+	font-size: 2.2em;
+	color: #e84a90;
+}
+
+.fif-tx>p{
+	font-size: 2em;
+	color: gray;
+	font-style: italic;
+}
+
+.fif-tx>a{
+	color: #000;
+	font-size: 2em;
+	letter-spacing: 2px;
+	text-decoration: none;
+	padding-bottom: 2px;
+	width: max-content;
+	border-bottom: 1.2px solid #000000;
+	align-self: center;
+}
+
+.sixth{
+	display: flex;
+	padding: 100px;
+	background-color: #e5e5e5;
+}
+
+.imm-six{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.imm-six-first{
+	width: 33.33%;
+	height: 400px;
+	background: url("//images01.nicepage.com/c461c07a441a5d220e8feb1a/01ca443f9882503a99a915be/afb0b2b2-365e-4e48-887c-6dacc605f7c5.jpg");
+	background-position-x: 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	align-self: center;
+}
+
+.block-six{
+	width: 33.33%;
+}
+
+.about-us{
+	background-color: white;
+	margin-top: 50px;
+	overflow-x: auto;
+}
+
+.imm-six-second{
+	background-image: url("//images01.nicepage.com/c461c07a441a5d220e8feb1a/d6c11a21917b552d9ffb48bc/44720b5f-d674-4089-b6ec-12c44ea13947.jpg");
+	background-position-y: 10%;
+	height: 350px;
+}
+
+.block-six{
+	width: 33.33%;
+}
+
+.imm-six-third{
+	background-image: url("https://images01.nicepage.com/c461c07a441a5d220e8feb1a/52d82c5900df5c6e8686dcd1/44d5d282-18f7-4295-9493-b2865af9bf3d.jpg");
+	background-position-y: 10%;
+	height: 300px;
+}
+
+.block-six>.zitata{
+	background-image: linear-gradient(#545af8, #e84a90);
+	padding: 15px;
+	font-size: 40px;
+	color: white;
+	box-sizing: border-box;
+	overflow-x: auto;
+}
+
+.seventh{
+	background-color: #e5e5e5;
+	padding: 50px;
+	display: flex;
+	justify-content: center;
+}
+
+.imm-se{
+	width: 50%;
+	background-size: cover;
+}
+
+.se-inner>.txt{
+	width: 50%;
+	background-color: #fff;
+}
+
+.se-inner::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #e84a90;
+	z-index: -4;
+	left: -50px;
+	top: 50px;
+}
+
+.se-inner::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: linear-gradient(#545af8, #e84a90);
+	z-index: -4;
+	left: 50px;
+	top: -50px;
+}
+
+.se-inner{
+	align-self: center;
+	width: 85%;
+	display: flex;
+	background-color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.eigth{
+	position: relative;
+	padding: 150px 50px 100px;
+	background-color: #fff;
+	height: 800px;
+}
+
+.ei-imeges{
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	gap: 15px;
+	padding: 0 100px;
+	position: relative;
+	z-index: 0;
+}
+
+.imm-eigh{
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+	background-color: #000;
+}
+
+#ei-first{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/41815b816a72540f998680db/purple-creative-flyer-template_1051-1729.jpg);
+}
+
+.imm-eigh#ei-third{
+	background-color: #7d72cb;
+}
+
+#ei-second{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e3f0982d83895495ab89b3d2/dark-mobile-device-mockup_149660-787.jpg);
+}
+
+#ei-third{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/43e65b1a03625b55a8e6252c/smartphone-with-weather-app-colorful-liquid-background_23-2148215468.jpg);
+	background-position-y: -10px;
+	background-repeat: no-repeat;
+}
+
+#ei-fourth{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/e09ab24c991751139a5d43e9/dff.jpg?version=);
+	background-position-y: -10px;
+	background-repeat: no-repeat;
+}
+
+#ei-fifth{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/68a12f08833c53f3b8da788d/pink-neon-night-business-sign_23-2148874638.jpg);
+}
+
+#ei-sixth{
+	background-image: url(https://images01.nicepage.com/c461c07a441a5d220e8feb1a/17319cbd48ef526f86145883/yyyy.jpg?version=);
+}
+
+.eigth>.txt{
+	position: absolute;
+	width: 45%;
+	background-color: #fff;
+	left: 75%;
+	top: 55%;
+	z-index: 1;
+	transform: translateX(-50%);
+}
+
+.bgggra-ei{
+	background-image: linear-gradient(#545af8, #e84a90);
+	width: 40%;
+	height: 90%;
+	left: 50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top: 50px;
+	z-index: 0;
+}
+
+.nineth{
+	padding: 40px;
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+	position: relative;
+	background-color: #e5e5e5;
+}
+
+.bbbggrrr-ni{
+	background-image: linear-gradient(#545af8, #e84a90);
+	width: 100%;
+	height: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 0;
+}
+
+.contact_with_us{
+	display: grid;
+	position: relative;
+	z-index: 1;
+	grid-template-columns: repeat(2, 1fr);
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px;
+	min-width: 600px;
+	width: 80%;
+	box-sizing: border-box;
+}
+
+.info_cwu-iiner{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 500;
+	font-family: 'Open Sans',sans-serif !important;
+  font-size: 10px;
+}
+
+.info_cwu-iiner>h3{
+	font-size: 3.6em;
+	font-weight: 400;
+	font-family: "Bai Jamjuree";
+	padding: 10px 14px 13px 0;
+}
+
+.info_cwu-iiner>.number{
+	font-size: 2.3em;
+}
+
+.info_cwu-iiner>.email{
+	font-size: 3em;
+}
+
+.info_cwu-iiner>.our-position{
+	font-size: 1.5em;
+}
+
+.info_cwu-iiner>.contacts{
+	margin-top: 14px;
+}
+
+.more-info-cwu-iiner{
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	max-width: 100%;
+}
+
+.inputs{
+	font-size: 18px;
+	padding: 8px 3px;
+	border: none;
+	background-color: #e5e5e5;
+}
+
+.more-info-cwu-iiner>.btn{
+	border-radius: 0%;
+	width: 100%;
+}
+
+.inputs:focus{
+	border: 2px solid #000;
+}
+
+footer{
+	background-color: #333;
+	padding: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a{
+	color: #e3abcc;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
